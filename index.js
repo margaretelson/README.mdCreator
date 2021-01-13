@@ -18,35 +18,50 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        name:'Description',
+        name:'description',
         message: "Please provide a description of your project.",
     },
     {
         type: 'input',
-        name: 'Installation',
+        name: 'installation',
         message: 'What are some step by step instructions on how to install your project?',
     },
     {
         type: 'input',
-        name: 'Usage',
+        name: 'usage',
         message: 'What is your fave tv show?',
     },
     {
         type: 'input',
-        name: 'Contributing',
+        name: 'contributing',
         message: 'What is your fave tv show?',
     },
     {
         type: 'input',
-        name: 'Tests',
+        name: 'tests',
         message: 'How do you run the automated tests for the system?',
     }
 ]).then((response) => {
-    // console.log(response)
+    console.log(response)
     const data = `
 ##${resonse.name}
 
-##
+##Description
+${response.description}
+
+##Installation
+${response.installation}
+
+##Usage
+${response.usage}
+
+##Contribution
+${response.contribution}
+
+##Tests
+${response.tests}
+
+
     `
     fs.writeFile('README.md', data, (error) => {
 
