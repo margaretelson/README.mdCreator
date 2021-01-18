@@ -23,18 +23,28 @@ inquirer.prompt([
     },
     {
         type: 'input',
+        name:'url',
+        message: "Please provide the url of your deployed website.",
+    },
+    {
+        type: 'input',
+        name:'image',
+        message: "Please provide an image link of your deployed website.",
+    },
+    {
+        type: 'input',
         name: 'installation',
-        message: 'What are some step by step instructions on how to install your project?',
+        message: 'What does a developer need to install your project?',
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'What is your fave tv show?',
+        message: 'I am so lost on this...',
     },
     {
         type: 'input',
         name: 'contributing',
-        message: 'What is your fave tv show?',
+        message: 'In what ways would you like other developers to request contributing to your project? Example: Github Fork/Clone/Pull, Email, etc.',
     },
     {
         type: 'input',
@@ -44,21 +54,27 @@ inquirer.prompt([
 ]).then((response) => {
     console.log(response)
     const data = `
-##${resonse.name}
+## ${response.name}
 
-##Description
+## Description
 ${response.description}
 
-##Installation
+## Url
+[Click here to see the live site!](${response.url})
+
+## Image
+![Screenshot Deployed Website](${response.image})
+
+## Installation
 ${response.installation}
 
-##Usage
+## Usage
 ${response.usage}
 
-##Contribution
+## Contribution
 ${response.contribution}
 
-##Tests
+## Tests
 ${response.tests}
 
 
