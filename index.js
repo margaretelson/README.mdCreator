@@ -69,17 +69,17 @@ inquirer.prompt([
     }
 ]).then((response) => {
     console.log(response)
-    let license;
+    let badge;
     if(response.license === 'MIT'){
-        license === '[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+        badge === '[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
     }else if(response.license === 'AGPL'){
-        license = '[![AGPL](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)';
+        badge = '[![AGPL](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)';
     }else if(response.license === 'GPL'){
-        license = '[![GPL](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)';
+        badge = '[![GPL](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)';
     }
     const data = `
 # ${response.name}
-
+${response.license.badge}
 ${response.license}
 
 ## Table of Contents
