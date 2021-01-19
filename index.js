@@ -69,51 +69,50 @@ inquirer.prompt([
     }
 ]).then((response) => {
     console.log(response)
-    let badge;
+    let license;
     if(response.license === 'MIT'){
-        badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+        license === '[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
     }else if(response.license === 'AGPL'){
-        badge = '[![AGPL](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)';
+        license = '[![AGPL](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)';
     }else if(response.license === 'GPL'){
-        badge = '[![GPL](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)';
+        license = '[![GPL](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)';
     }
     const data = `
 # ${response.name}
+${}
 ${response.license}
 
-# Table of Contents
+## Table of Contents
 * [License](#license)
 * [Description](#description)
 * [URL](#url)
-* [Image](#image)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
 
-### Description 
+## Description 
 ${response.description}
 
-### URL
+## URL
 [Click here to see the live site!](${response.url})
 
-### Image
 ![Screenshot Deployed Website](${response.image})
 
-### Installation
+## Installation
 ${response.installation}
 
-### Usage
+## Usage
 ${response.usage}
 
-### Contributing
+## Contributing
 ${response.contribution}
 
-### Tests
+## Tests
 ${response.tests}
 
-### Questions
+## Questions
 Please contact me below with any questions you have about the appiction.
 * Github: https://github.com/${response.questions1}
 * Email: ${response.questions2}
