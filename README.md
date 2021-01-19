@@ -17,9 +17,9 @@
 The README.md Creator Application outlines the necessary component to make a strong README.md. The user can run the application in their terminal and simply input their responses the questions prompted to them.
 
 ## URL
-[Click here to see the live site!]()
+[Click here to see the live site!](./Demovideo.mp4)
 
-![Screenshot Deployed Website]()
+![Screenshot Deployed Website](./Readmecreator.png)
 
 ## Installation
 npm i, npm i inquirer, npm i fs
