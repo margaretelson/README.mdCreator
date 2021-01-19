@@ -1,6 +1,7 @@
 
-# ghjkl
-undefined
+# ghjk
+[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 MIT
 
 ## Table of Contents
@@ -14,10 +15,10 @@ MIT
 * [Questions](#questions)
 
 ## Description 
-ghjk
+ghjkl
 
 ## URL
-[Click here to see the live site!](ghjk)
+[Click here to see the live site!](ghjkl)
 
 ![Screenshot Deployed Website](ghjkl)
 
@@ -25,7 +26,7 @@ ghjk
 ghjkl
 
 ## Usage
-ghjkl
+ghjk
 
 ## Contributing
 undefined
@@ -35,8 +36,8 @@ ghjkl
 
 ## Questions
 Please contact me below with any questions you have about the appiction.
-* Github: https://github.com/fghjk
-* Email: fghjk
+* Github: https://github.com/hjkl;
+* Email: ghjkl
 
 
     

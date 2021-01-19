@@ -24,12 +24,12 @@ inquirer.prompt([
     {
         type: 'input',
         name:'url',
-        message: "Please provide the URL of your deployed website.",
+        message: "Please provide the URL or a demo of your deployed application.",
     },
     {
         type: 'input',
         name:'image',
-        message: "Please provide an image link of your deployed website.",
+        message: "Please provide an image link of your deployed application.",
     },
     {
         type: 'input',
@@ -79,7 +79,8 @@ inquirer.prompt([
     }
     const data = `
 # ${response.name}
-${response.badge}
+${badge}
+
 ${response.license}
 
 ## Table of Contents
