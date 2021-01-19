@@ -79,9 +79,8 @@ inquirer.prompt([
     }
     const data = `
 # ${response.name}
-${badge}
 
-${response.license}
+${badge}
 
 ## Table of Contents
 * [License](#license)

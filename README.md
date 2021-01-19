@@ -1,8 +1,7 @@
 
-# ghjk
-[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# README.mdCreator
 
-MIT
+[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 * [License](#license)
@@ -15,29 +14,29 @@ MIT
 * [Questions](#questions)
 
 ## Description 
-ghjkl
+The README.md Creator Application outlines the necessary component to make a strong README.md. The user can run the application in their terminal and simply input their responses the questions prompted to them.
 
 ## URL
-[Click here to see the live site!](ghjkl)
+[Click here to see the live site!]()
 
-![Screenshot Deployed Website](ghjkl)
+![Screenshot Deployed Website]()
 
 ## Installation
-ghjkl
+npm i, npm i inquirer, npm i fs
 
 ## Usage
-ghjk
+README.mdCreator is an open source for a user to generate a README.md
 
 ## Contributing
 undefined
 
 ## Tests
-ghjkl
+There are no tests to run for this application.
 
 ## Questions
 Please contact me below with any questions you have about the appiction.
-* Github: https://github.com/hjkl;
-* Email: ghjkl
+* Github: https://github.com/margaretelson
+* Email: margaret.a.elson@gmail.com
 
 
     
