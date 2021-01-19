@@ -1,6 +1,6 @@
 
-# hjkl
-AGPL
+# ghjkl
+MIT
 
 # Table of Contents
 * [License](#license)
@@ -14,10 +14,10 @@ AGPL
 * [Questions](#questions)
 
 ### Description 
-ghjkl
+ghjk
 
 ### URL
-[Click here to see the live site!](ghjkl)
+[Click here to see the live site!](ghjk)
 
 ### Image
 ![Screenshot Deployed Website](ghjk)
@@ -26,7 +26,7 @@ ghjkl
 ghjk
 
 ### Usage
-ghjkl
+hjk
 
 ### Contributing
 undefined
@@ -36,8 +36,8 @@ hjk
 
 ### Questions
 Please contact me below with any questions you have about the appiction.
-* Github: https://github.com/ghkl;
-* Email: bn
+* Github: https://github.com/jkl
+* Email: b
 
 
     
