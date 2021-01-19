@@ -34,12 +34,12 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'installation',
-        message: 'What does a developer need to install your project?',
+        message: 'What does a developer need to do to install your project?',
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'I am so lost on this...',
+        message: 'What do you want the user to know before using your application?',
     },
     {
         type: 'input',
@@ -49,33 +49,73 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'tests',
-        message: 'How do you run the automated tests for the system?',
+        message: 'How do you run an automated test for your application?',
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Which license would you like to assign your application?',
+        choices: ['MIT', 'AGPL','GPL']
+    },
+    {
+        type: 'input',
+        name: 'questions1',
+        message: 'What is your Github username so other developers can contact you with questions?',
+    },
+    {
+        type: 'input',
+        name: 'questions2',
+        message: 'What is your email so other developers can contact you with questions?',
     }
 ]).then((response) => {
     console.log(response)
+    let badge;
+    if(response.license === 'MIT'){
+        badge = [![MIT]('https://img.shields.io/apm/l/atomic-design-ui.svg?')]('https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs');
+    }else if(response.license === 'AGPL'){
+        badge = [![AGPL]('https://img.shields.io/badge/license-AGPL-blue.svg')]('http://www.gnu.org/licenses/agpl-3.0');
+    }else if(response.license === 'GPL'){
+        badge = [![GPL]('https://img.shields.io/badge/License-GPL%20v3-yellow.svg')]('https://opensource.org/licenses/');
+    }
     const data = `
 ## ${response.name}
 
-## Description
+# Table of Contents
+* [License] (#license)
+* [Description](#description)
+* [URL] (#url)
+* [Image] (#image)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+
+# Description ${response.license}
 ${response.description}
 
-## Url
+# URL
 [Click here to see the live site!](${response.url})
 
-## Image
+# Image
 ![Screenshot Deployed Website](${response.image})
 
-## Installation
+# Installation
 ${response.installation}
 
-## Usage
+# Usage
 ${response.usage}
 
-## Contribution
+# Contributing
 ${response.contribution}
 
-## Tests
+# Tests
 ${response.tests}
+
+## Questions
+Please contact me below with any questions you have about the appiction.
+* Github: https://github.com/${response.questions1}
+* Email: ${response.questions2}
 
 
     `
