@@ -79,7 +79,7 @@ inquirer.prompt([
     }
     const data = `
 # ${response.name}
-${}
+
 ${response.license}
 
 ## Table of Contents
