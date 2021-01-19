@@ -17,7 +17,7 @@
 The README.md Creator Application outlines the necessary component to make a strong README.md. The user can run the application in their terminal and simply input their responses the questions prompted to them.
 
 ## URL
-[Click here to see the live site!](./Demovideo.mp4)
+[Click here to see the live site!](https://drive.google.com/file/d/160Hg-KrOgRpKypLt1N59x9PjKo7nRCn5/view?usp=sharing)
 
 ![Screenshot Deployed Website](./Readmecreator.png)
 
