@@ -24,7 +24,7 @@ inquirer.prompt([
     {
         type: 'input',
         name:'url',
-        message: "Please provide the url of your deployed website.",
+        message: "Please provide the URL of your deployed website.",
     },
     {
         type: 'input',
@@ -44,7 +44,7 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'contributing',
-        message: 'In what ways would you like other developers to request contributing to your project? Example: Github Fork/Clone/Pull, Email, etc.',
+        message: 'In what ways would you like other developers to contribute to your project?',
     },
     {
         type: 'input',
@@ -71,48 +71,49 @@ inquirer.prompt([
     console.log(response)
     let badge;
     if(response.license === 'MIT'){
-        badge = [![MIT]('https://img.shields.io/apm/l/atomic-design-ui.svg?')]('https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs');
+        badge = '[![MIT](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)';
     }else if(response.license === 'AGPL'){
-        badge = [![AGPL]('https://img.shields.io/badge/license-AGPL-blue.svg')]('http://www.gnu.org/licenses/agpl-3.0');
+        badge = '[![AGPL](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)';
     }else if(response.license === 'GPL'){
-        badge = [![GPL]('https://img.shields.io/badge/License-GPL%20v3-yellow.svg')]('https://opensource.org/licenses/');
+        badge = '[![GPL](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)';
     }
     const data = `
-## ${response.name}
+# ${response.name}
+${response.license}
 
 # Table of Contents
-* [License] (#license)
+* [License](#license)
 * [Description](#description)
-* [URL] (#url)
-* [Image] (#image)
+* [URL](#url)
+* [Image](#image)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
 
-# Description ${response.license}
+### Description 
 ${response.description}
 
-# URL
+### URL
 [Click here to see the live site!](${response.url})
 
-# Image
+### Image
 ![Screenshot Deployed Website](${response.image})
 
-# Installation
+### Installation
 ${response.installation}
 
-# Usage
+### Usage
 ${response.usage}
 
-# Contributing
+### Contributing
 ${response.contribution}
 
-# Tests
+### Tests
 ${response.tests}
 
-## Questions
+### Questions
 Please contact me below with any questions you have about the appiction.
 * Github: https://github.com/${response.questions1}
 * Email: ${response.questions2}
